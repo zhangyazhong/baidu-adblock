@@ -3,7 +3,11 @@
     "manifest_version": 2,
     "version": "1.0",
     "description": "屏蔽百度搜索页面上含有的商业推广等广告",
-    "browser_action": {
+    "homepage_url": "https://github.com/SISSORS-FDU/baidu-adblock",
+    "permissions": [
+        "cookies"
+    ],
+    "page_action": {
         "default_icon": "sissors(512).png",
         "default_title": "屏蔽商业推广"
     },
