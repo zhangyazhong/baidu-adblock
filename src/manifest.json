@@ -1,7 +1,7 @@
 {
     "name": "屏蔽百度推广",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "1.1",
     "description": "屏蔽百度搜索页面上含有的商业推广等广告",
     "homepage_url": "https://github.com/SISSORS-FDU/baidu-adblock",
     "permissions": [
@@ -18,11 +18,14 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://www.baidu.com/*", "*://baidu.com/*"],
+            "matches": ["*://www.baidu.com/*", "*://baidu.com/*", "*://www.tieba.baidu.com/*", "*://tieba.baidu.com/*"],
             "js": ["jquery.min.js"]
         }, {
             "matches": ["*://www.baidu.com/*", "*://baidu.com/*"],
-            "js": ["adblock.js"]
+            "js": ["baiduAdblock.js"]
+        }, {
+            "matches": ["*://www.tieba.baidu.com/*", "*://tieba.baidu.com/*"],
+            "js": ["tiebaAdblock.js"]
         }
     ]
 }
