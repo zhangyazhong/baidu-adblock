@@ -8,6 +8,9 @@ function block(dom) {
     $.each(dom.children(), function(i, item) {
         if ($(item).attr('id') === undefined || $(item).attr('id').length > 3) {
             $(item).remove();
+        } else if ($(item).find("span[class='m']").text().indexOf('广告') != -1) {
+            alert('success');
+            $(item).remove();
         }
     });
     dom.find(hintAttr).remove();
