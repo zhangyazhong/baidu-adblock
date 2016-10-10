@@ -1,15 +1,87 @@
 <html>
     <style>
-        html, body {
-            width: 90px;
+        * {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            width: 280px;
+        }
+        body {
+            width: 270px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        hr {
+            border: 0;
+            border-bottom: 1px #C0C0C0 solid;
+        }
+        .option {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .option:hover {
+            background-color: RGB(238, 238, 238);
+            cursor: pointer;
+        }
+        .alter-data {
+            font-weight: bold;
+            color: red;
         }
     </style>
     <body>
-        <div id="title">
-            屏蔽商业推广
+        <div id="container" style="width: 100%">
+            <div id="homepage" class="option">
+                <div id="header" style="margin: 0 auto; height: 48px; width: 144px;">
+                    <div id="logo" style="float: left; margin-top: 6px">
+                        <img src="sissors(48).png" height="36px" width="36px">
+                    </div>
+                    <div id="title" style="float: left; line-height: 48px; font-size: 24px; margin-left: 10px; ">
+                        百度推广
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div id="status" style="margin-top: 10px; margin-bottom: 10px; padding-left: 10px; padding-right: 10px">
+                <div id="today" style="height: 24px; width: 100%">
+                    <div style="float: left">
+                        <img src="calendar.png" height="24px" width="24px">
+                    </div>
+                    <div style="float: left; line-height: 26px; margin-left: 10px">
+                        今日屏蔽广告数量：
+                        <span id="today-count" class="alter-data"></span>
+                    </div>
+                </div>
+                <div id="history" style="height: 24px; width: 100%; margin-top: 10px">
+                    <div style="float: left">
+                        <img src="history.png" height="24px" width="24px">
+                    </div>
+                    <div style="float: left; line-height: 26px; margin-left: 10px">
+                        累计屏蔽广告数量：
+                        <span id="total-count" class="alter-data"></span>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div id="about" class="option">
+                <div id="version" style="height: 24px; width: 100%; padding-left: 10px; padding-right: 10px">
+                    <div style="float: left">
+                        <img src="version.png" height="24px" width="24px">
+                    </div>
+                    <div style="float: left; line-height: 26px; margin-left: 10px">
+                        当前版本：
+                        <span id="version-info" class="alter-data" style="color: RGB(68, 119, 187)">1.4</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="version">
-            版本：1.0
-        </div>
+        <script src="jquery.min.js"></script>
+        <script src="popup.js"></script>
     </body>
 </html>

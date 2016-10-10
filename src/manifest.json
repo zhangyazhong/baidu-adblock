@@ -5,11 +5,12 @@
     "description": "屏蔽百度搜索页面上含有的商业推广等广告",
     "homepage_url": "https://github.com/SISSORS-FDU/baidu-adblock",
     "permissions": [
-        "cookies"
+        "cookies", "storage"
     ],
-    "page_action": {
+    "browser_action": {
         "default_icon": "sissors(512).png",
-        "default_title": "屏蔽商业推广"
+        "default_title": "屏蔽百度推广",
+        "default_popup": "popup.html"
     },
     "icons": {
           "16": "sissors(512).png",
