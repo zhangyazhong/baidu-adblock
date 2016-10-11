@@ -17,8 +17,16 @@ var today = 'day' + date.getFullYear() + date.getMonth() + date.getDate();
 var total = 'totalBlock';
 
 chrome.storage.local.get(total, function (result) {
-    $('#total-count').html(result[total]);
+    if (result[total] === undefined) {
+        $('#total-count').html(0);
+    } else {
+        $('#total-count').html(result[total]);
+    }
 });
 chrome.storage.local.get(today, function (result) {
-    $('#today-count').html(result[today]);
+    if (result[today] === undefined) {
+        $('#today-count').html(0);
+    } else {
+        $('#today-count').html(result[today]);
+    }
 });

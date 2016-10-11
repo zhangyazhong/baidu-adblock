@@ -83,7 +83,7 @@ $(function() {
     //         }, 1000);
     //     }
     // });
-    
+
     // if (window.localStorage.getItem('showBlockSummary') === 'true') {
     //     var showBlockSummaryTimer = window.setInterval("showBlockSummary()", 1000);
     // }
