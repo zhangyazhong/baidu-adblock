@@ -1,15 +1,15 @@
 {
-    "name": "屏蔽百度推广",
+    "name": "屏蔽商业推广",
     "manifest_version": 2,
-    "version": "1.4.1",
-    "description": "屏蔽百度搜索页面上含有的商业推广等广告",
-    "homepage_url": "https://github.com/SISSORS-FDU/baidu-adblock",
+    "version": "2.0.0",
+    "description": "屏蔽页面上含有的商业推广等广告",
+    "homepage_url": "https://github.com/zhangyazhong/baidu-adblock",
     "permissions": [
         "cookies", "storage"
     ],
     "browser_action": {
         "default_icon": "sissors(512).png",
-        "default_title": "屏蔽百度推广",
+        "default_title": "屏蔽商业推广",
         "default_popup": "popup.html"
     },
     "icons": {

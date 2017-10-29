@@ -3,7 +3,7 @@ var hintAttr = '.hint_common_restop';
 var blockRecord = 0;
 var resultSummaryAttr = '.head_nums_cont_inner .nums'
 var blockSummaryAttr = '.head_nums_cont_inner .nums #blockNum'
-var blockSummaryHtml = '，<a href="https://github.com/SISSORS-FDU/baidu-adblock" style="text-decoration:none;">屏蔽百度推广</a>已为您屏蔽<span id="blockNum">' + blockRecord + '</span>个推广广告</div>';
+var blockSummaryHtml = '，<a href="https://github.com/zhangyazhong/baidu-adblock" style="text-decoration:none;">屏蔽商业推广</a>已为您屏蔽<span id="blockNum">' + blockRecord + '</span>个推广广告</div>';
 var date = new Date();
 var today = 'day' + date.getFullYear() + date.getMonth() + date.getDate();
 var total = 'totalBlock';

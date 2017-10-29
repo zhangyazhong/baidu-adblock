@@ -1,6 +1,6 @@
 $('#homepage').click(function() {
     chrome.tabs.create({
-        'url': 'https://github.com/SISSORS-FDU/baidu-adblock',
+        'url': 'https://github.com/zhangyazhong/baidu-adblock',
         'active': true
     }, function(tab) {});
 });
