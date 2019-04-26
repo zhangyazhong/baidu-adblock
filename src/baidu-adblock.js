@@ -42,13 +42,13 @@ function saveToHistory(blockCount) {
 }
 
 function block(dom) {
-    var tmpBlock = 0;
+    let tmpBlock = 0;
     $.each(dom.children(), function(i, item) {
         if ($(item).attr('id') === undefined || $(item).attr('id').length > 3) {
             $(item).remove();
             blockRecord++;
             tmpBlock++;
-        } else if ($(item).find("span[class='m']").text().indexOf('广告') != -1) {
+        } else if ($(item).find(".m").text().indexOf('广告') !== -1 || $(item).find(".m").text().indexOf('商业推广') !== -1) {
             $(item).remove();
             blockRecord++;
             tmpBlock++;

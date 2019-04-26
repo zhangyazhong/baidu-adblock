@@ -1,7 +1,7 @@
 {
     "name": "屏蔽商业推广",
     "manifest_version": 2,
-    "version": "2.0.0",
+    "version": "2.1.1",
     "description": "屏蔽页面上含有的商业推广等广告",
     "homepage_url": "https://github.com/zhangyazhong/baidu-adblock",
     "permissions": [
@@ -23,10 +23,10 @@
             "js": ["jquery.min.js"]
         }, {
             "matches": ["*://www.baidu.com/*", "*://baidu.com/*"],
-            "js": ["baiduAdblock.js"]
+            "js": ["baidu-adblock.js"]
         }, {
             "matches": ["*://www.tieba.baidu.com/*", "*://tieba.baidu.com/*"],
-            "js": ["tiebaAdblock.js"]
+            "js": ["tieba-adblock.js"]
         }
     ]
 }
